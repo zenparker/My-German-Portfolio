@@ -28,7 +28,7 @@ Create a local env file (do not commit it):
 2. Add your keys (see `.env.example`):
 
 ```bash
-GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+GEMINI_API_KEY="YOUR_API_KEY"
 APP_URL="http://localhost:3000"
 ```
 
