@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# My German Portfolio
 
-# Run and deploy your AI Studio app
+A personal portfolio project built with **React + Vite + TypeScript**, with **Tailwind CSS** styling.
 
-This contains everything you need to run your app locally.
+## Tech stack
 
-View your app in AI Studio: https://ai.studio/apps/d25d5962-9fe2-47f6-90b6-7d83d23d3177
+- React (Vite)
+- TypeScript
+- Tailwind CSS
 
-## Run Locally
+## Getting started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (LTS recommended)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Install
+
+```bash
+npm install
+```
+
+### Environment variables
+
+Create a local env file (do not commit it):
+
+1. Create `.env.local`
+2. Add your keys (see `.env.example`):
+
+```bash
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+APP_URL="http://localhost:3000"
+```
+
+### Run (dev)
+
+```bash
+npm run dev
+```
+
+The dev server runs on `http://localhost:3000`.
+
+## Scripts
+
+```bash
+npm run dev      # start dev server (port 3000)
+npm run build    # build for production
+npm run preview  # preview production build
+npm run lint     # typecheck (tsc --noEmit)
+```
+
+## License
+
+MIT (see `LICENSE`).
