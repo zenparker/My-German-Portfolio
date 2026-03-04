@@ -1,0 +1,41 @@
+/* @type {import('tailwindcss').Config} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-pure-white: #ffffff;
+  --color-off-white: #fcfcfc;
+  --color-light-gray: #f5f5f5;
+  --color-medium-gray: #737373;
+  --color-dark-gray: #404040;
+  --color-near-black: #171717;
+  --color-pure-black: #0a0a0a;
+  
+  --color-accent: var(--accent-color, #10b981);
+}
+
+@layer base {
+  body {
+    @apply bg-pure-black text-pure-white font-sans transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .pill-container {
+    @apply rounded-full border border-pure-black/20 dark:border-pure-white/10 px-6 py-2 backdrop-blur-md;
+  }
+  
+  .pill-card {
+    @apply rounded-2xl border border-pure-black/10 dark:border-pure-white/5 p-8 bg-off-white dark:bg-near-black transition-all duration-200 hover:scale-[1.02];
+  }
+  
+  .pill-button {
+    @apply rounded-full px-8 py-3 font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98];
+  }
+  
+  .pill-badge {
+    @apply rounded-full px-4 py-1 text-xs font-semibold border border-pure-black/10 dark:border-pure-white/10;
+  }
+}
